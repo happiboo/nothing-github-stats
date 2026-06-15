@@ -1,0 +1,58 @@
+/* ── Nothing Design System ── */
+:root {
+  --nt-black:   #0a0a0a;
+  --nt-white:   #e8e8e0;
+  --nt-grey1:   rgba(232,232,224,0.06);
+  --nt-grey2:   rgba(232,232,224,0.12);
+  --nt-grey3:   rgba(232,232,224,0.22);
+  --nt-grey4:   rgba(232,232,224,0.40);
+  --nt-grey5:   rgba(232,232,224,0.65);
+  --nt-accent:  #e8e8e0;
+  --nt-dim:     rgba(232,232,224,0.18);
+
+  --ff-mono: 'Share Tech Mono', monospace;
+  --ff-body: 'Space Mono', monospace;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in:  cubic-bezier(0.4, 0, 1, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--nt-black);
+  color: var(--nt-white);
+  font-family: var(--ff-body);
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* scanlines overlay */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(255,255,255,0.008) 2px,
+    rgba(255,255,255,0.008) 4px
+  );
+  pointer-events: none;
+  z-index: 9999;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--nt-black); }
+::-webkit-scrollbar-thumb { background: var(--nt-grey3); }
+
+::selection { background: var(--nt-white); color: var(--nt-black); }
+
+a { color: inherit; text-decoration: none; }
+button { cursor: pointer; font-family: var(--ff-mono); }
+input  { font-family: var(--ff-mono); }
