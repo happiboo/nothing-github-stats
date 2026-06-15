@@ -1,104 +1,86 @@
-# nothing-github-stats
+<!-- ItzFaLL3n — Nothing-style profile README -->
 
-> GitHub profile stats rebuilt in Nothing's design language — dot-matrix, OLED black, monochrome.
-
-![preview](./preview.png)
-
-## Features
-
-- **Live GitHub API** — real stats, repos, languages
-- **Contribution heatmap** — deterministic per-username grid
-- **Snake game** — eat your contribution cells, WASD/arrow keys, auto-play mode
-- **Language chart** — segmented bar + breakdown
-- **Repo cards** — top repos by stars with live links
-- **README generator** — copy-paste markdown with pre-styled dark stat cards
-- **Nothing design language** — dot-matrix mono, OLED black, glyph LED strip, scanlines, corner brackets
-
-## Stack
-
-| Tool | Role |
-|---|---|
-| React 18 | UI |
-| Framer Motion 11 | Animations |
-| Vite 5 | Build |
-| GitHub REST API | Data |
-| GitHub Actions | Snake SVG + Pages deploy |
-
-## Getting Started
-
-```bash
-git clone https://github.com/YOUR_USERNAME/nothing-github-stats
-cd nothing-github-stats
-npm install
-npm run dev
-```
-
-Open `http://localhost:5173`, type any GitHub username, hit `LOAD ↗`.
-
-## Deploy to GitHub Pages
-
-1. Push to `main`
-2. Go to **Settings → Pages** → Source: **GitHub Actions**
-3. The `deploy.yml` workflow builds and deploys automatically
-
-## Snake on Your Profile README
-
-1. Go to **Settings → Actions → General** → enable **Read and write permissions**
-2. Run the `Generate Snake` workflow manually once
-3. The snake SVG is pushed to the `output` branch
-4. Paste into your `username/username` README:
-
-```md
-![Snake](https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/github-contribution-grid-snake-dark.svg)
-```
-
-## File Structure
+<div align="center">
 
 ```
-nothing-github-stats/
-├── src/
-│   ├── components/
-│   │   ├── GlyphBar.jsx          # Animated Nothing LED strip
-│   │   ├── SearchBar.jsx         # Username input
-│   │   ├── ProfileHeader.jsx     # Avatar + identity
-│   │   ├── StatGrid.jsx          # 9-cell metrics
-│   │   ├── ContribHeatmap.jsx    # 52×7 contribution grid
-│   │   ├── SnakeGame.jsx         # Playable snake on the grid
-│   │   ├── LanguageChart.jsx     # Language bar + list
-│   │   ├── RepoGrid.jsx          # Top repos
-│   │   ├── ReadmeGenerator.jsx   # Copy-paste README
-│   │   └── Tabs.jsx              # Tab navigation
-│   ├── hooks/
-│   │   └── useGitHub.js          # GitHub API hook
-│   ├── lib/
-│   │   └── utils.js              # Helpers + README builder
-│   ├── styles/
-│   │   └── global.css            # Design tokens + base
-│   ├── App.jsx
-│   └── main.jsx
-├── public/
-│   └── favicon.svg
-├── .github/
-│   └── workflows/
-│       ├── snake.yml             # Generate snake SVG
-│       └── deploy.yml            # Deploy to GitHub Pages
-├── index.html
-├── vite.config.js
-└── package.json
+┌──────────────────────────────────────────────────────┐
+│  ITZFALL3N                                           │
+│  @ItzFaLL3n                                          │
+│  Backend Developer · Cloud Security · Container Alchemist │
+└──────────────────────────────────────────────────────┘
 ```
 
-## Design Language
-
-Inspired by Nothing's product aesthetic:
-- **OLED black** `#0a0a0a` base
-- **Share Tech Mono + Space Mono** typography
-- **Dot-matrix** letterforms and labeling
-- **Glyph LED strip** in the header (animated)
-- **CRT scanlines** overlay
-- **Corner brackets** on avatar
-- **1px grid lines** between stat cells
-- **Zero gradients, zero colors** — monochrome only
+</div>
 
 ---
 
-<sub><code>// built with nothing · monochrome · precise · minimal</code></sub>
+<img src="https://avatars.githubusercontent.com/u/ItzFaLL3n" width="80" align="right" style="filter:grayscale(1)" />
+
+**FaLL3n**
+Backend Developer · Cloud Security · Container Alchemist
+
+`📍 somewhere in the cloud` · `he/him`
+
+---
+
+### `// 01 — init`
+
+```yaml
+name:      FaLL3n
+location:  "somewhere in the cloud"
+focus:     Cloud Security · Backend Architecture · Containers
+building:  Secure, scalable systems. One container at a time.
+fun_fact:  "I don't patch vulnerabilities. I have long talks with them."
+```
+
+---
+
+### `// 02 — languages`
+
+![TypeScript](https://img.shields.io/badge/TypeScript-0a0a0a?style=flat-square&logo=typescript&logoColor=e8e8e0)
+![Python](https://img.shields.io/badge/Python-0a0a0a?style=flat-square&logo=python&logoColor=e8e8e0)
+![Rust](https://img.shields.io/badge/Rust-0a0a0a?style=flat-square&logo=rust&logoColor=e8e8e0)
+![JavaScript](https://img.shields.io/badge/JavaScript-0a0a0a?style=flat-square&logo=javascript&logoColor=e8e8e0)
+![Bash](https://img.shields.io/badge/Bash-0a0a0a?style=flat-square&logo=gnubash&logoColor=e8e8e0)
+![HCL](https://img.shields.io/badge/HCL-0a0a0a?style=flat-square&logo=terraform&logoColor=e8e8e0)
+![Lua](https://img.shields.io/badge/Lua-0a0a0a?style=flat-square&logo=lua&logoColor=e8e8e0)
+![HTML5](https://img.shields.io/badge/HTML5-0a0a0a?style=flat-square&logo=html5&logoColor=e8e8e0)
+![CSS3](https://img.shields.io/badge/CSS3-0a0a0a?style=flat-square&logo=css3&logoColor=e8e8e0)
+
+---
+
+### `// 03 — stats`
+
+<div align="center">
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ItzFaLL3n&show_icons=true&count_private=true&theme=dark&bg_color=0a0a0a&border_color=222222&title_color=e8e8e0&text_color=888888&icon_color=555555&hide_title=false&rank_icon=github)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ItzFaLL3n&layout=compact&theme=dark&bg_color=0a0a0a&border_color=222222&title_color=e8e8e0&text_color=888888&langs_count=8)
+
+![Streak](https://streak-stats.demolab.com?user=ItzFaLL3n&theme=dark&background=0a0a0a&border=222222&ring=e8e8e0&fire=e8e8e0&currStreakLabel=e8e8e0&sideLabels=555555&dates=333333&stroke=0a0a0a)
+
+</div>
+
+---
+
+### `// 04 — contributions`
+
+<div align="center">
+
+![Snake](https://raw.githubusercontent.com/ItzFaLL3n/ItzFaLL3n/output/github-contribution-grid-snake-dark.svg)
+
+</div>
+
+---
+
+### `// 05 — connect`
+
+[![GitHub](https://img.shields.io/badge/github-ItzFaLL3n-0a0a0a?style=flat-square&logo=github&logoColor=e8e8e0&labelColor=111)](https://github.com/ItzFaLL3n)
+[![Discord](https://img.shields.io/badge/discord-join-0a0a0a?style=flat-square&logo=discord&logoColor=e8e8e0&labelColor=111)](https://discord.gg/yourlink)
+[![Twitter/X](https://img.shields.io/badge/x-@fa__ll3n-0a0a0a?style=flat-square&logo=x&logoColor=e8e8e0&labelColor=111)](https://x.com/fa_ll3n)
+
+---
+
+<div align="center">
+<sub><code>// nothing · monochrome · precise · 0a0a0a</code></sub>
+</div>
